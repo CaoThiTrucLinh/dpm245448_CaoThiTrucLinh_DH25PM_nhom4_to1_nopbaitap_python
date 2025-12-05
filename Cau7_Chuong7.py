@@ -11,6 +11,8 @@ worksheet.set_column('D:D', 15)
 worksheet.set_column('E:E', 15)
 # định dạng tiêu đề cột in đậm
 bold = workbook.add_format({'bold': True})
+# thêm dòng tiêu đề và định dạng in đậm
+
 worksheet.write('A1', 'STT',bold)
 worksheet.write('B1', 'MÃ SẢN PHẨM',bold)
 worksheet.write('C1', 'TÊN SẢN PHẨM',bold)
@@ -31,3 +33,5 @@ worksheet.write('E3', '18000')
 #Chèn Logo vào
 worksheet.insert_image('B5', 'logo_UEL.png')
 workbook.close()
+
+
